@@ -1,0 +1,53 @@
+{
+    "name": "chorry/pyrospy-filter",
+    "type": "package",
+    "require-dev": {
+        "phpunit/phpunit": "^11.2",
+        "phpstan/phpstan": "^1.11",
+        "dg/bypass-finals": "^1.8",
+        "zoonru/pyrospy":"2.1.2",
+        "amphp/amp": "^3.0",
+        "revolt/event-loop": "^1.0",
+        "amphp/http-client": "^5",
+        "amphp/byte-stream": "^2.0",
+        "symfony/console": "^5|^6",
+        "amphp/pipeline": "^1.0"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Zoon\\PyroSpy\\Plugins\\Filtering\\": "src/Filtering"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zoon\\PyroSpy\\Plugins\\Filtering\\": "src/Filtering",
+            "Zoon\\PyroSpy\\": "vendor/zoonru/pyrospy/app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Loutsenko",
+            "email": "alex.chorry@gmail.com"
+        }
+    ],
+    "repositories": {
+        "pyrospy": {
+            "type": "package",
+            "package": {
+                "name": "zoonru/pyrospy",
+                "version": "2.1.2",
+                "source": {
+                    "url": "https://github.com/chorry/pyrospy.git",
+                    "type": "git",
+                    "reference": "origin/tests-and-filters"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zoon\\PyroSpy\\": "app/"
+                }
+            }
+        }
+    }
+}
