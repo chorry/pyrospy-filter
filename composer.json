@@ -38,9 +38,9 @@
                 "name": "zoonru/pyrospy",
                 "version": "2.1.2",
                 "source": {
-                    "url": "https://github.com/chorry/pyrospy.git",
+                    "url": "https://github.com/zoonru/pyrospy.git",
                     "type": "git",
-                    "reference": "origin/tests-and-filters"
+                    "reference": "origin/master"
                 }
             },
             "autoload": {
